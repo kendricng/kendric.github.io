@@ -1,4 +1,8 @@
-baseURL = 'https://kendricng.github.io/'
+baseURL = 'https://kendricng.github.io'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'PaperMod'
+
+[frontmatter]
+date = ["date", "publishDate"]
+author = "Kendric Ng"
