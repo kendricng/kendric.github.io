@@ -2,6 +2,7 @@ baseURL = 'https://kendricng.github.io'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'PaperMod'
+publishDir = "docs"
 
 [frontmatter]
 date = ["date", "publishDate"]
