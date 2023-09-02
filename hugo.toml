@@ -1,9 +1,65 @@
-baseURL = 'https://kendricng.github.io'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'PaperMod'
-publishDir = "docs"
+#baseURL = 'https://kendricng.github.io'
+#languageCode = 'en-us'
+#title = 'Kendric's Blog'
+#theme = 'PaperMod'
+#
+#[frontmatter]
+#date = ["date", "publishDate"]
+#author = "Kendric Ng"
 
-[frontmatter]
-date = ["date", "publishDate"]
-author = "Kendric Ng"
+baseURL = "https://kendricng.github.io"
+title = "Kendric's Blog"
+languageCode = "en-us"
+
+# Theme Configuration
+theme = "PaperMod"
+
+# Enable and configure syntax highlighting
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+
+# Enable and configure Google Analytics (replace UA-XXXXXXXXX with your tracking ID)
+googleAnalytics = ""
+
+# Enable and configure Disqus for comments (replace your-disqus-shortname with your Disqus shortname)
+disqusShortname = ""
+
+[params]
+  # Author Information
+  author = "Kendric Ng"
+  description = "A blog about..."
+  
+  # Social Media Links
+  twitter = ""
+  github = ""
+  linkedin = ""
+  
+  # Copyright Information
+  copyright = "Copyright © Kendric Ng"
+  
+  # Additional configuration options for your theme (if applicable)
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    weight = 1
+    url = "/"
+    
+  # Additional menu items if needed
+
+[markup]
+  # Default Markdown rendering engine (choose one)
+  defaultMarkdownHandler = "goldmark"
+  
+[outputs]
+  # Customize output formats if needed (e.g., to generate an RSS feed)
+
+[permalinks]
+  # Configure permalinks for content types (if needed)
+  post = "/:year/:month/:day/:title/"
+
+[taxonomies]
+  # Define taxonomies (tags and categories) if needed
+  tag = "tags"
+  category = "categories"
